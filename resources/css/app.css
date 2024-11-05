@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+@import url(https://fonts.googleapis.com/css?family=Volkhov:400i);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@import url(../custom/lib/bootstrap/dist/css/bootstrap.min.css);
+@import url(../custom/lib/animate.css/animate.css);
+@import url(../custom/lib/components-font-awesome/css/font-awesome.min.css);
+@import url(../custom/lib/et-line-font/et-line-font.css);
+@import url(../custom/lib/flexslider/flexslider.css);
+@import url(../custom/lib/owl.carousel/dist/assets/owl.carousel.min.css);
+@import url(../custom/lib/owl.carousel/dist/assets/owl.theme.default.min.css);
+@import url(../custom/lib/magnific-popup/dist/magnific-popup.css);
+@import url(../custom/lib/simple-text-rotator/simpletextrotator.css);
+@import url(../custom/css/style.css);
+@import url(../custom/css/colors/default.css);
+
+
+
+[x-cloak] {
+    display: none;
+}

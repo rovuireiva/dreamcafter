@@ -1,0 +1,12 @@
+
+@import url(../vendors/mdi/css/materialdesignicons.min.css);
+@import url(../vendors/ti-icons/css/themify-icons.css);
+@import url(../vendors/css/vendor.bundle.base.css);
+@import url(../vendors/font-awesome/css/font-awesome.min.css);
+@import url(../vendors/jquery-bar-rating/css-stars.css);
+@import url(../vendors/css/css/style2.css);
+
+
+[x-cloak] {
+    display: none;
+}
