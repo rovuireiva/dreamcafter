@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title inertia>{{ config('app.name', 'Laravel') }}</title>
+        <title inertia>{{ config('app.name', 'Dream Crafter') }}</title>
 
         <!--  
         Favicons
@@ -46,9 +46,7 @@
 
         <!-- Main stylesheet and color file-->
         <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-        <link id="color-scheme" href="{{ asset('assets/css/colors/default.css') }}" rel="stylesheet">
-
-
+  
         <!-- Scripts -->
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])

@@ -8,6 +8,10 @@ Route::get('/', function () {
     return Inertia::render('Welcome'); // Menggunakan app.blade.php
 })->name('Welcome');
 
+Route::get('/Produk', function () {
+    return Inertia::render('Produk');
+})->name('Produk');
+
 // Rute halaman login
 Route::get('/login', function () {
     return Inertia::render('Auth/Login'); // Akan menggunakan layout.blade.php

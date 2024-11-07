@@ -16,6 +16,7 @@ defineProps({
     title: String,
 });
 
+
 const showingNavigationDropdown = ref(false);
 
 const switchToTeam = (team) => {
@@ -29,14 +30,16 @@ const switchToTeam = (team) => {
 </script>
 
 <template>
+          <Head :title="title" />
          <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><ApplicationLogo/></a>
+            <a href="/"><ApplicationLogo/></a>
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/resources/js/Pages/Kategori.vue"> Produk</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="../Pages/Produk.vue">Produk</a></li>
               <li><a href="#">Portofolio</a>
               </li>
               <li><a href="#">Blog</a>
@@ -135,7 +138,6 @@ const switchToTeam = (team) => {
 @import url(/public/assets/lib/magnific-popup/dist/magnific-popup.css);
 @import url(/public/assets/lib/simple-text-rotator/simpletextrotator.css);
 @import url(/public/assets/css/style.css);
-@import url(/public/assets/css/colors/default.css);
 
 /* Floating WhatsApp */
 .whatsapp-icon {

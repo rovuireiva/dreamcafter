@@ -30,6 +30,7 @@
         "jquery": "^3.7.1",
         "jquery-migrate": "^3.5.2",
         "rm": "^0.1.8",
+        "vue-router": "^4.4.5",
         "wow.js": "^1.2.2"
     }
 }

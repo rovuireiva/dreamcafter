@@ -1,6 +1,14 @@
 <template>
   <div class="app-logo">
-    <img src="public/assets/images/favicons/logo.svg" class="vue-logo" />
+    <img src="../Vendor/src/assets/images/Logo DC.svg" class="vue-logo" />
   </div>
 </template>
+
+<style scoped>
+
+.vue-logo {
+  width: 130px; /* Ubah sesuai ukuran yang diinginkan */
+  height: auto; /* Menjaga rasio aspek */
+}
+</style>
 
