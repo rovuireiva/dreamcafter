@@ -12,8 +12,18 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 
 
+
 defineProps({
     title: String,
+
+    component: String, // Untuk menentukan komponen yang dimuat
+  Welcome: Boolean,
+  Produk: Boolean,
+  Portofolio: Boolean,
+  Blog: Boolean,
+  Tentang: Boolean,
+  laravelVersion: String,
+  phpVersion: String,
 });
 
 
@@ -44,7 +54,10 @@ const switchToTeam = (team) => {
               </li>
               <li><a href="#">Blog</a>
               </li>
-              <li><a href="#">Tentang Kami</a>
+              <li>
+                <Link :href="route('tentang')">
+                  Tentang Kami
+                </Link>
               </li>
               <!--li.dropdown.navbar-cart-->
               <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
@@ -98,7 +111,6 @@ const switchToTeam = (team) => {
         </div>
       </nav>
         <slot />  
-
       <footer class="footer bg-dark">
           <div class="container">
             <div class="row">

@@ -1,5 +1,27 @@
 <script setup lang="ts">
-import WebLayout from '@/Layouts/WebLayout.vue';
+import WebLayout from './WebLayout.vue';
+
+defineProps({
+    title: String,
+
+    Welcome: {
+        type: Boolean,
+    },
+    Produk: {
+        type: Boolean,
+    },
+    Portofolio: {
+        type: String,
+        required: true,
+    },
+    Blog: {
+        type: String,
+        required: true,
+    },
+    Tentang: {
+        type: String,
+    },
+});
 </script>
 
 <template>

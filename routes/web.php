@@ -5,12 +5,27 @@ use Inertia\Inertia;
 
 // Rute halaman utama untuk welcome.vue
 Route::get('/', function () {
-    return Inertia::render('Welcome'); // Menggunakan app.blade.php
-})->name('Welcome');
+    return Inertia::render('WebLayout', [
+        'Welcome' => Route::has('welcome'),
+        'Produk' => Route::has('produk'),
+        'Portofolio' => Route::has('portofolio'),
+        'Blog' => Route::has('blog'),
+        'Tentang' => Route::has('tentang'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+        'component' => 'Welcome' // Menentukan 'Welcome' sebagai komponen default
+    ]);
+});
 
-Route::get('/Produk', function () {
-    return Inertia::render('Produk');
-})->name('Produk');
+// Rute untuk halaman Welcome
+Route::get('/welcome', function () {
+    return Inertia::render('Welcome');
+})->name('welcome');
+
+// Rute untuk halaman Tentang
+Route::get('/tentang', function () {
+    return Inertia::render('Tentang');
+})->name('tentang');
 
 // Rute halaman login
 Route::get('/login', function () {
@@ -26,5 +41,4 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard'); // Mengarah ke Dashboard.vue
     })->name('dashboard');
-
 });
