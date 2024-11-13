@@ -48,11 +48,25 @@ const switchToTeam = (team) => {
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Home</a></li>
-              <li><a href="../Pages/Produk.vue">Produk</a></li>
-              <li><a href="#">Portofolio</a>
+              <li>
+                <Link :href="route('welcome')">
+                  Home
+                </Link>
               </li>
-              <li><a href="#">Blog</a>
+              <li>                
+                <Link :href="route('produk')">
+                  Produk
+                </Link>
+              </li>
+              <li>
+                <Link :href="route('portofolio')">
+                  Portofolio
+                </Link>
+              </li>
+              <li>
+                <Link :href="route('blog')">
+                  Blog
+                </Link>
               </li>
               <li>
                 <Link :href="route('tentang')">
@@ -131,8 +145,6 @@ const switchToTeam = (team) => {
      </div>
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
 </template>
-
-
 
 
 <style scoped>

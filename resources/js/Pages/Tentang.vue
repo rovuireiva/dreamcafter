@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WebLayout from './WebLayout.vue';
+import WebLayout from '../Layouts/WebLayout.vue';
 
 defineProps({
     title: String,

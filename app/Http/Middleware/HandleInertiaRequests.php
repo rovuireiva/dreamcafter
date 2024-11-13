@@ -23,9 +23,15 @@ class HandleInertiaRequests extends Middleware
      */
     public function rootView(Request $request): string
     {
-        // Menggunakan app.blade.php untuk welcome.vue
-        return $request->is('/') ? 'app' : 'layout'; // layout.blade.php untuk semua rute lainnya
+        // Tentukan app.blade.php untuk halaman tertentu
+        if ($request->is('/') || $request->is('welcome') || $request->is('produk') || $request->is('portofolio') || $request->is('blog') || $request->is('tentang')) {
+            return 'app'; // Menggunakan app.blade.php
+        }
+    
+        // Default ke layout.blade.php untuk rute lainnya
+        return 'layout';
     }
+    
 
     /**
      * Determine the current asset version.

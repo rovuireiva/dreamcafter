@@ -1,6 +1,6 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
-import WebLayout from './WebLayout.vue';
+import WebLayout from '../Layouts/WebLayout.vue';
 
 function handleImageError() {
     document.getElementById('screenshot-container')?.classList.add('!hidden');
@@ -11,7 +11,7 @@ function handleImageError() {
 </script>
 
 <template>
-      <WebLayout title="Tentang Kami">
+      <WebLayout title="Home">
       <section class="home-section home-parallax home-fade home-full-height bg-dark-60 agency-page-header" id="home" data-background="assets/images/agency/agency_bg.jpg">
         <div class="titan-caption">
           <div class="caption-content">

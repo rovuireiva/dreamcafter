@@ -5,7 +5,7 @@ use Inertia\Inertia;
 
 // Rute halaman utama untuk welcome.vue
 Route::get('/', function () {
-    return Inertia::render('WebLayout', [
+    return Inertia::render('Welcome', [
         'Welcome' => Route::has('welcome'),
         'Produk' => Route::has('produk'),
         'Portofolio' => Route::has('portofolio'),
@@ -13,7 +13,6 @@ Route::get('/', function () {
         'Tentang' => Route::has('tentang'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
-        'component' => 'Welcome' // Menentukan 'Welcome' sebagai komponen default
     ]);
 });
 
@@ -21,6 +20,21 @@ Route::get('/', function () {
 Route::get('/welcome', function () {
     return Inertia::render('Welcome');
 })->name('welcome');
+
+// Rute untuk halaman Produk
+Route::get('/produk', function () {
+    return Inertia::render('Produk');
+})->name('produk');
+
+// Rute untuk halaman Portofolio
+Route::get('/portofolio', function () {
+    return Inertia::render('Portofolio');
+})->name('portofolio');
+
+// Rute untuk halaman Blog
+Route::get('/blog', function () {
+    return Inertia::render('Blog');
+})->name('blog');
 
 // Rute untuk halaman Tentang
 Route::get('/tentang', function () {
